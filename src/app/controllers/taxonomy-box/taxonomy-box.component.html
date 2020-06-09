@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let taxonomy of (taxonomies$ | async)">
+    <a routerLink="/listing/{{taxonomyType}}/{{taxonomy._id}}">
+      {{taxonomy.name}}
+    </a>
+  </li>
+</ul>

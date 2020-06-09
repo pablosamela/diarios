@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">
+    {{ taxonomyTypes.categories }}
+  </div>
+  <div class="card-body">
+    
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let taxonomy of (taxonomies$ | async)">
+        <a routerLink="/listing/{{taxonomyType}}/{{taxonomy._id}}">
+          {{taxonomy.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

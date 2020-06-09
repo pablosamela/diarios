@@ -1,0 +1,9 @@
+<div *ngIf="(entity$ | async) as entity">
+  <span>
+    <h1>{{entity.name}}</h1>
+    <p>
+      {{entity.description}}
+      <a routerLink="{{entity.url}}">link >></a>
+    </p>
+  </span>
+</div>

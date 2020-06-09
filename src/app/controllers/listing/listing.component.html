@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header">
+    {{ title }}
+  </div>
+  <div class="card-body">
+
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let entity of (entities$ | async)">
+        <a href="/entity/{{entity._id}}">
+          {{entity.name}}
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</div>
